@@ -13,7 +13,6 @@ class AuthenticateUserController {
 
     const token = await authenticateUserUseCase.execute({ email, password })
 
-    console.log(token)
     return res.json(token)
   }
 

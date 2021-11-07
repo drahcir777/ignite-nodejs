@@ -45,7 +45,7 @@ class AuthenticateUserUseCase {
       expiresIn: "1d"
     })
 
-    const tokenRetorn: IResponse = {
+    const tokenReturn: IResponse = {
       token,
       user: {
         name: user.name,
@@ -53,7 +53,7 @@ class AuthenticateUserUseCase {
       }
     }
 
-    return tokenRetorn
+    return tokenReturn
 
   }
 
